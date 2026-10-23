@@ -1,0 +1,104 @@
+/* alertas */
+.alerta {
+  padding: var(--espaco-2) var(--espaco-3);
+  margin-bottom: var(--espaco-2);
+  border-left: 6px solid;
+  border-radius: var(--raio);
+}
+
+.alerta p {
+  margin-bottom: 0;
+}
+
+.alerta-sucesso {
+  background-color: var(--verde-claro);
+  border-color: var(--verde);
+}
+
+.alerta-erro {
+  background-color: var(--vermelho-claro);
+  border-color: var(--vermelho);
+}
+
+.alerta-aviso {
+  background-color: var(--amarelo-claro);
+  border-color: var(--amarelo);
+}
+
+.alerta-info {
+  background-color: var(--azul-claro);
+  border-color: var(--azul);
+}
+
+/* toast (o js coloca a classe mostrar) */
+.toast {
+  display: none;
+  position: fixed;
+  right: var(--espaco-3);
+  bottom: var(--espaco-3);
+  left: var(--espaco-3);
+  max-width: 360px;
+  margin-left: auto;
+  padding: var(--espaco-2) var(--espaco-3);
+  background-color: var(--cinza-900);
+  color: var(--branco);
+  border-left: 6px solid var(--verde);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra-forte);
+  z-index: 200;
+}
+
+.toast.mostrar {
+  display: block;
+  animation: toast-entra 0.3s;
+}
+
+@keyframes toast-entra {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* modal (o js coloca a classe aberto) */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: var(--espaco-2);
+  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  z-index: 300;
+}
+
+.modal.aberto {
+  display: flex;
+}
+
+.modal-caixa {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: var(--espaco-4);
+  background-color: var(--branco);
+  border-radius: var(--raio);
+}
+
+.modal-fechar {
+  position: absolute;
+  top: var(--espaco-1);
+  right: var(--espaco-2);
+  border: none;
+  background: none;
+  font-size: var(--fonte-lg);
+  color: var(--cinza-600);
+  cursor: pointer;
+}
+
+.modal-fechar:hover {
+  color: var(--vermelho);
+}

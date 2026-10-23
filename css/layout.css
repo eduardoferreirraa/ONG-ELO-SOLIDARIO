@@ -1,0 +1,215 @@
+/* estrutura geral da pagina com css grid */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* cabecalho, conteudo, rodape */
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding: 0 var(--espaco-2);
+}
+
+.secao {
+  padding: var(--espaco-6) 0;
+}
+
+.secao-cinza {
+  background-color: var(--cinza-100);
+}
+
+.secao-verde {
+  background-color: var(--verde);
+  color: var(--branco);
+}
+
+.secao-verde h2 {
+  color: var(--branco);
+}
+
+.titulo-secao {
+  text-align: center;
+  margin-bottom: var(--espaco-4);
+}
+
+.cabecalho-pagina {
+  background-color: var(--azul-claro);
+  padding: var(--espaco-6) 0;
+}
+
+.cabecalho-pagina p {
+  max-width: 60ch;
+  margin-bottom: 0;
+}
+
+/* hero da home */
+.hero {
+  background-color: var(--azul-claro);
+  padding: var(--espaco-6) 0;
+}
+
+.hero-grade {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espaco-4);
+  align-items: center;
+}
+
+.botoes-hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+  margin-top: var(--espaco-3);
+}
+
+/* numeros */
+.estatisticas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espaco-3);
+  text-align: center;
+}
+
+.estatisticas li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.estatisticas strong {
+  font-family: var(--fonte-titulo);
+  font-size: var(--fonte-xxl);
+  color: var(--azul);
+  line-height: 1.1;
+}
+
+/* caixas de "como ajudar" */
+.caixa {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--espaco-2);
+  height: 100%;
+  padding: var(--espaco-3);
+  background-color: var(--branco);
+  border: 2px solid var(--cinza-300);
+  border-radius: var(--raio);
+}
+
+.caixa h3,
+.caixa p {
+  margin-bottom: 0;
+}
+
+.caixa .botao {
+  margin-top: auto;
+}
+
+/* pagina com coluna lateral (formularios) */
+.pagina-lateral {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espaco-4);
+  align-items: start;
+}
+
+.painel {
+  background-color: var(--cinza-100);
+  padding: var(--espaco-3);
+  border-radius: var(--raio);
+}
+
+.painel + .painel {
+  margin-top: var(--espaco-3);
+}
+
+/* rodape */
+.rodape {
+  background-color: var(--cinza-900);
+  color: var(--branco);
+  padding-top: var(--espaco-6);
+}
+
+.rodape h3 {
+  color: var(--branco);
+  font-size: var(--fonte-base);
+}
+
+.rodape a {
+  color: var(--branco);
+}
+
+.rodape a:hover {
+  color: var(--amarelo);
+}
+
+.rodape-colunas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espaco-4);
+}
+
+.rodape li {
+  margin-bottom: var(--espaco-1);
+}
+
+.rodape-copia {
+  margin: var(--espaco-4) 0 0;
+  padding: var(--espaco-2);
+  border-top: 1px solid var(--cinza-600);
+  text-align: center;
+  font-size: var(--fonte-sm);
+}
+
+/* tabela do guia de estilos e listas de contato */
+.lista-contato li {
+  margin-bottom: var(--espaco-2);
+}
+
+/* a lista do menu de categorias dos projetos */
+.filtro-projetos {
+  margin-top: var(--espaco-3);
+}
+
+/* estilos so da pagina componentes.html (guia de estilos) */
+.amostras {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--espaco-2);
+}
+
+.amostra {
+  border: 1px solid var(--cinza-300);
+  border-radius: var(--raio);
+  overflow: hidden;
+  font-size: var(--fonte-sm);
+}
+
+.amostra-cor {
+  height: 64px;
+}
+
+.amostra p {
+  padding: var(--espaco-1);
+  margin-bottom: 0;
+}
+
+.amostra-espaco {
+  height: 24px;
+  background-color: var(--azul);
+  margin-bottom: var(--espaco-1);
+}
+
+.demo-grid .coluna {
+  background-color: var(--azul-claro);
+  border: 1px solid var(--azul);
+  padding: var(--espaco-1);
+  text-align: center;
+  font-size: var(--fonte-sm);
+}
+
+.bloco-guia {
+  margin-bottom: var(--espaco-6);
+}

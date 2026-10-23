@@ -1,0 +1,127 @@
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: var(--espaco-3);
+}
+
+.campo label,
+.campo legend {
+  font-weight: 600;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"],
+.campo input[type="number"],
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: var(--espaco-1) var(--espaco-2);
+  border: 2px solid var(--cinza-300);
+  border-radius: var(--raio);
+  background-color: var(--branco);
+  color: var(--cinza-900);
+  transition: border-color 0.2s;
+}
+
+.campo textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-color: var(--azul);
+  outline: 3px solid var(--azul-claro);
+}
+
+/* validacao: so aparece depois que clica em enviar (o js coloca a classe validado no form) */
+.validado input:invalid,
+.validado textarea:invalid,
+.validado select:invalid,
+.campo input.erro {
+  border-color: var(--vermelho);
+  background-color: var(--vermelho-claro);
+}
+
+.validado input:valid,
+.validado textarea:valid,
+.campo input.ok {
+  border-color: var(--verde);
+}
+
+.mensagem-erro {
+  display: none;
+  color: var(--vermelho);
+  font-size: var(--fonte-sm);
+}
+
+.validado input:invalid ~ .mensagem-erro,
+.validado textarea:invalid ~ .mensagem-erro,
+.mensagem-erro.visivel {
+  display: block;
+}
+
+.ajuda {
+  font-size: var(--fonte-sm);
+  color: var(--cinza-600);
+}
+
+/* grupos de checkbox e radio */
+fieldset {
+  border: none;
+}
+
+.opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-1) var(--espaco-3);
+}
+
+.opcoes label {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-1);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.opcoes input {
+  width: 20px;
+  height: 20px;
+}
+
+/* valores de doacao (radio com cara de botao) */
+.valores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-1);
+}
+
+.valores input {
+  position: absolute;
+  opacity: 0;
+}
+
+.valores label {
+  padding: var(--espaco-1) var(--espaco-3);
+  border: 2px solid var(--azul);
+  border-radius: var(--raio);
+  color: var(--azul);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.valores input:checked + label {
+  background-color: var(--azul);
+  color: var(--branco);
+}
+
+/* campos lado a lado em tela maior */
+.linha-campos {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: var(--espaco-3);
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elo Solidário: ONG que conecta voluntários, doadores e projetos sociais.">
+  <title>Início | Elo Solidário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-interno">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="40" height="40">
+        Elo Solidário
+      </a>
+
+      <input type="checkbox" id="menu-check" class="menu-check">
+      <label for="menu-check" class="botao-hamburguer" aria-label="Abrir ou fechar o menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="menu">
+        <ul class="menu-lista">
+          <li><a class="ativo" href="index.html">Início</a></li>
+          <li class="item-dropdown">
+            <a href="pages/projetos.html">Projetos</a>
+            <ul class="submenu">
+              <li><a href="pages/projetos.html#educacao">Educação</a></li>
+              <li><a href="pages/projetos.html#saude">Saúde</a></li>
+              <li><a href="pages/projetos.html#ambiente">Meio ambiente</a></li>
+            </ul>
+          </li>
+          <li class="item-dropdown">
+            <a href="pages/voluntario.html">Participe</a>
+            <ul class="submenu">
+              <li><a href="pages/voluntario.html">Seja voluntário</a></li>
+              <li><a href="pages/doacao.html">Faça uma doação</a></li>
+            </ul>
+          </li>
+          <li><a href="pages/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grade">
+        <div class="hero-texto">
+          <h1>Juntos a gente muda a vida de quem mais precisa</h1>
+          <p class="texto-destaque">A Elo Solidário apoia projetos de educação, saúde e meio ambiente na Grande São Paulo. Escolha como você quer participar.</p>
+          <div class="botoes-hero">
+            <a class="botao botao-verde botao-grande" href="pages/voluntario.html">Quero ser voluntário</a>
+            <a class="botao botao-laranja botao-grande" href="pages/doacao.html">Fazer uma doação</a>
+          </div>
+        </div>
+        <img class="hero-imagem" src="img/hero.svg" alt="Ilustração de um coração vermelho sobre colinas verdes, com o sol ao fundo" width="800" height="500">
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <ul class="estatisticas">
+          <li><strong>12</strong> projetos ativos</li>
+          <li><strong>340</strong> voluntários</li>
+          <li><strong>2.800</strong> famílias atendidas</li>
+          <li><strong>8</strong> anos de atuação</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao secao-cinza">
+      <div class="container">
+        <h2 class="titulo-secao">Projetos em destaque</h2>
+        <div class="cards">
+        <article class="card">
+          <img src="img/educacao.svg" alt="" width="600" height="340">
+          <div class="card-corpo">
+            <div class="badges-card">
+              <span class="badge badge-azul">Educação</span>
+              <span class="badge badge-amarelo">Aceitando doações</span>
+            </div>
+            <h3>Reforço Escolar</h3>
+            <p>Aulas de reforço de português e matemática para crianças do ensino fundamental, três vezes por semana.</p>
+            <div class="card-rodape">
+              <div>
+                <div class="barra">
+                  <div class="barra-preenchida" style="width: 60%;"></div>
+                </div>
+                <p class="meta-texto">R$ 7.200 de R$ 12.000 (60%)</p>
+              </div>
+              <a class="botao botao-contorno" href="pages/doacao.html">Apoiar este projeto</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/saude.svg" alt="" width="600" height="340">
+          <div class="card-corpo">
+            <div class="badges-card">
+              <span class="badge badge-verde">Saúde</span>
+              <span class="badge badge-amarelo">Aceitando doações</span>
+            </div>
+            <h3>Mutirão de Saúde</h3>
+            <p>Aferição de pressão, orientação sobre prevenção e encaminhamento para postos de saúde, uma vez por mês.</p>
+            <div class="card-rodape">
+              <div>
+                <div class="barra">
+                  <div class="barra-preenchida" style="width: 70%;"></div>
+                </div>
+                <p class="meta-texto">R$ 5.600 de R$ 8.000 (70%)</p>
+              </div>
+              <a class="botao botao-contorno" href="pages/doacao.html">Apoiar este projeto</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/ambiente.svg" alt="" width="600" height="340">
+          <div class="card-corpo">
+            <div class="badges-card">
+              <span class="badge badge-verde">Meio ambiente</span>
+              <span class="badge badge-amarelo">Aceitando doações</span>
+            </div>
+            <h3>Horta Comunitária</h3>
+            <p>Cultivo de hortaliças em um terreno cedido, com a produção dividida entre as famílias participantes.</p>
+            <div class="card-rodape">
+              <div>
+                <div class="barra">
+                  <div class="barra-preenchida" style="width: 76%;"></div>
+                </div>
+                <p class="meta-texto">R$ 3.800 de R$ 5.000 (76%)</p>
+              </div>
+              <a class="botao botao-contorno" href="pages/doacao.html">Apoiar este projeto</a>
+            </div>
+          </div>
+        </article>
+        </div>
+        <p class="texto-centro" style="margin-top: 32px;">
+          <a class="botao" href="pages/projetos.html">Ver todos os projetos</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <h2 class="titulo-secao">Como você pode ajudar</h2>
+        <div class="linha">
+          <div class="col-4">
+            <div class="caixa">
+              <h3>Doe o seu tempo</h3>
+              <p>Dê aulas, ajude em mutirões ou organize eventos. Cada hora faz diferença.</p>
+              <a class="botao botao-verde" href="pages/voluntario.html">Cadastrar como voluntário</a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="caixa">
+              <h3>Doe qualquer valor</h3>
+              <p>As doações pagam materiais, transporte e alimentação dos projetos.</p>
+              <a class="botao botao-laranja" href="pages/doacao.html">Quero doar</a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="caixa">
+              <h3>Divulgue a causa</h3>
+              <p>Compartilhe os projetos com amigos e familiares. Quanto mais gente souber, melhor.</p>
+              <a class="botao botao-contorno" href="pages/projetos.html">Conhecer os projetos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-verde">
+      <div class="container texto-centro">
+        <h2>Transparência com quem ajuda</h2>
+        <p>Veja de forma resumida para onde vai cada real doado.</p>
+        <a class="botao botao-laranja" href="#" data-modal="modal-transparencia">Ver prestação de contas</a>
+      </div>
+    </section>
+
+    <div class="modal" id="modal-transparencia">
+      <div class="modal-caixa">
+        <button class="modal-fechar">&times;</button>
+        <h2>Para onde vai o dinheiro</h2>
+        <p>Valores de exemplo, só para o layout:</p>
+        <ul>
+          <li>70% para os projetos (materiais e alimentação)</li>
+          <li>20% para transporte e estrutura</li>
+          <li>10% para custos administrativos</li>
+        </ul>
+        <button class="botao modal-ok">Entendi</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-colunas">
+      <div>
+        <h3>Elo Solidário</h3>
+        <p class="texto-pequeno">Organização fictícia criada para o projeto da disciplina. Conectamos voluntários, doadores e projetos sociais.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <ul class="texto-pequeno">
+          <li><a href="pages/projetos.html">Projetos</a></li>
+          <li><a href="pages/voluntario.html">Seja voluntário</a></li>
+          <li><a href="pages/doacao.html">Faça uma doação</a></li>
+          <li><a href="pages/componentes.html">Guia de estilos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul class="texto-pequeno">
+          <li>contato@elosolidario.org.br</li>
+          <li>(11) 0000-0000</li>
+          <li>Rua Exemplo, 123 - São Paulo, SP</li>
+        </ul>
+      </div>
+    </div>
+    <p class="rodape-copia">© 2026 Elo Solidário. Trabalho acadêmico, Entrega II (CSS3).</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

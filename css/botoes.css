@@ -1,0 +1,94 @@
+.botao {
+  display: inline-block;
+  padding: var(--espaco-1) var(--espaco-3);
+  border: 2px solid var(--azul);
+  border-radius: var(--raio);
+  background-color: var(--azul);
+  color: var(--branco);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.botao:hover {
+  background-color: var(--azul-escuro);
+  border-color: var(--azul-escuro);
+  color: var(--branco);
+}
+
+.botao:focus {
+  outline: 3px solid var(--laranja);
+  outline-offset: 3px;
+}
+
+.botao:active {
+  transform: translateY(2px);
+}
+
+/* desabilitado */
+.botao:disabled,
+.botao.desabilitado {
+  background-color: var(--cinza-300);
+  border-color: var(--cinza-300);
+  color: var(--cinza-600);
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* variacoes de cor */
+.botao-verde {
+  background-color: var(--verde);
+  border-color: var(--verde);
+}
+
+.botao-verde:hover {
+  background-color: var(--verde-escuro);
+  border-color: var(--verde-escuro);
+}
+
+.botao-laranja {
+  background-color: var(--laranja);
+  border-color: var(--laranja);
+  color: var(--cinza-900);
+}
+
+.botao-laranja:hover {
+  background-color: var(--laranja-escuro);
+  border-color: var(--laranja-escuro);
+  color: var(--branco);
+}
+
+.botao-contorno {
+  background-color: transparent;
+  color: var(--azul);
+}
+
+.botao-contorno:hover {
+  background-color: var(--azul);
+  color: var(--branco);
+}
+
+/* tamanhos */
+.botao-pequeno {
+  padding: 4px var(--espaco-2);
+  font-size: var(--fonte-sm);
+}
+
+.botao-grande {
+  padding: var(--espaco-2) var(--espaco-4);
+  font-size: var(--fonte-md);
+}
+
+.botao-total {
+  display: block;
+  width: 100%;
+}
+
+.grupo-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-2);
+  align-items: center;
+}

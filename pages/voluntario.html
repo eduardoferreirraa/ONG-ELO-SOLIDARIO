@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elo Solidário: ONG que conecta voluntários, doadores e projetos sociais.">
+  <title>Seja voluntário | Elo Solidário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-interno">
+      <a class="logo" href="../index.html">
+        <img src="../img/logo.svg" alt="" width="40" height="40">
+        Elo Solidário
+      </a>
+
+      <input type="checkbox" id="menu-check" class="menu-check">
+      <label for="menu-check" class="botao-hamburguer" aria-label="Abrir ou fechar o menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="menu">
+        <ul class="menu-lista">
+          <li><a href="../index.html">Início</a></li>
+          <li class="item-dropdown">
+            <a href="projetos.html">Projetos</a>
+            <ul class="submenu">
+              <li><a href="projetos.html#educacao">Educação</a></li>
+              <li><a href="projetos.html#saude">Saúde</a></li>
+              <li><a href="projetos.html#ambiente">Meio ambiente</a></li>
+            </ul>
+          </li>
+          <li class="item-dropdown">
+            <a class="ativo" href="voluntario.html">Participe</a>
+            <ul class="submenu">
+              <li><a href="voluntario.html">Seja voluntário</a></li>
+              <li><a href="doacao.html">Faça uma doação</a></li>
+            </ul>
+          </li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="cabecalho-pagina">
+      <div class="container">
+        <h1>Seja voluntário</h1>
+        <p>Preencha o formulário e a gente entra em contato para combinar os próximos passos.</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container pagina-lateral">
+        <form class="formulario" data-toast="toast-voluntario">
+          <div class="alerta alerta-info">
+            <p>Os campos com * são obrigatórios.</p>
+          </div>
+
+          <div class="linha-campos">
+            <div class="campo">
+              <label for="nome">Nome completo *</label>
+              <input type="text" id="nome" name="nome" placeholder="Maria da Silva" required minlength="3">
+              <span class="mensagem-erro">Digite o nome completo, com pelo menos 3 letras.</span>
+            </div>
+            <div class="campo">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="maria@email.com" required>
+              <span class="mensagem-erro">Digite um e-mail válido, por exemplo maria@email.com.</span>
+            </div>
+          </div>
+
+          <div class="linha-campos">
+            <div class="campo">
+              <label for="telefone">Telefone *</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="11999999999" required pattern="[0-9]{10,11}">
+              <span class="ajuda">Só números, com DDD.</span>
+              <span class="mensagem-erro">Use só números, com DDD (10 ou 11 dígitos).</span>
+            </div>
+            <div class="campo">
+              <label for="cidade">Cidade *</label>
+              <select id="cidade" name="cidade" required>
+                <option value="">Selecione</option>
+                <option>São Paulo</option>
+                <option>Diadema</option>
+                <option>Santo André</option>
+                <option>São Bernardo do Campo</option>
+                <option>Outra</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="campo">
+            <legend>Áreas de interesse</legend>
+            <div class="opcoes">
+              <label><input type="checkbox" name="area" value="educacao"> Educação</label>
+              <label><input type="checkbox" name="area" value="saude"> Saúde</label>
+              <label><input type="checkbox" name="area" value="ambiente"> Meio ambiente</label>
+              <label><input type="checkbox" name="area" value="eventos"> Eventos</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="campo">
+            <legend>Disponibilidade</legend>
+            <div class="opcoes">
+              <label><input type="radio" name="disponibilidade" value="manha"> Manhã</label>
+              <label><input type="radio" name="disponibilidade" value="tarde"> Tarde</label>
+              <label><input type="radio" name="disponibilidade" value="noite"> Noite</label>
+              <label><input type="radio" name="disponibilidade" value="fds"> Fins de semana</label>
+            </div>
+          </fieldset>
+
+          <div class="campo">
+            <label for="mensagem">Conte um pouco sobre você</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Experiências, habilidades, o que te motivou..."></textarea>
+          </div>
+
+          <div class="campo">
+            <div class="opcoes">
+              <label><input type="checkbox" name="aceite" required> Concordo em receber contato da ONG *</label>
+            </div>
+          </div>
+
+          <button type="submit" class="botao botao-verde botao-grande">Enviar cadastro</button>
+        </form>
+
+        <aside>
+          <div class="painel painel-fixo">
+            <h2>Como funciona</h2>
+            <p>Depois do cadastro, a equipe liga para você, explica os projetos e combina um dia para começar.</p>
+            <div class="badges-card">
+              <span class="badge badge-verde">Sem experiência</span>
+              <span class="badge badge-azul">Horário flexível</span>
+              <span class="badge badge-amarelo">Certificado</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="toast" id="toast-voluntario">
+      <strong>Cadastro enviado!</strong>
+      <p class="texto-pequeno" style="margin: 0;">Em breve a gente entra em contato.</p>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-colunas">
+      <div>
+        <h3>Elo Solidário</h3>
+        <p class="texto-pequeno">Organização fictícia criada para o projeto da disciplina. Conectamos voluntários, doadores e projetos sociais.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <ul class="texto-pequeno">
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="voluntario.html">Seja voluntário</a></li>
+          <li><a href="doacao.html">Faça uma doação</a></li>
+          <li><a href="componentes.html">Guia de estilos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul class="texto-pequeno">
+          <li>contato@elosolidario.org.br</li>
+          <li>(11) 0000-0000</li>
+          <li>Rua Exemplo, 123 - São Paulo, SP</li>
+        </ul>
+      </div>
+    </div>
+    <p class="rodape-copia">© 2026 Elo Solidário. Trabalho acadêmico, Entrega II (CSS3).</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+/* sistema de grid de 12 colunas (mobile first) */
+.linha {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--espaco-3);
+}
+
+/* no celular tudo ocupa a linha inteira */
+.col-3,
+.col-4,
+.col-6,
+.col-8,
+.col-9,
+.col-12 {
+  grid-column: span 12;
+}
+
+/* menores ficam lado a lado mesmo no celular */
+.col-1 { grid-column: span 3; }
+.col-2 { grid-column: span 6; }
+
+.alinha-centro {
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .col-sm-4 { grid-column: span 4; }
+  .col-sm-6 { grid-column: span 6; }
+}
+
+@media (min-width: 768px) {
+  .col-1 { grid-column: span 1; }
+  .col-2 { grid-column: span 2; }
+  .col-3 { grid-column: span 3; }
+  .col-4 { grid-column: span 4; }
+  .col-6 { grid-column: span 6; }
+  .col-8 { grid-column: span 8; }
+  .col-9 { grid-column: span 9; }
+  .col-12 { grid-column: span 12; }
+}

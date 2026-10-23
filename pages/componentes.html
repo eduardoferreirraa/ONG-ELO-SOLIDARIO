@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elo Solidário: ONG que conecta voluntários, doadores e projetos sociais.">
+  <title>Guia de estilos | Elo Solidário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-interno">
+      <a class="logo" href="../index.html">
+        <img src="../img/logo.svg" alt="" width="40" height="40">
+        Elo Solidário
+      </a>
+
+      <input type="checkbox" id="menu-check" class="menu-check">
+      <label for="menu-check" class="botao-hamburguer" aria-label="Abrir ou fechar o menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="menu">
+        <ul class="menu-lista">
+          <li><a href="../index.html">Início</a></li>
+          <li class="item-dropdown">
+            <a href="projetos.html">Projetos</a>
+            <ul class="submenu">
+              <li><a href="projetos.html#educacao">Educação</a></li>
+              <li><a href="projetos.html#saude">Saúde</a></li>
+              <li><a href="projetos.html#ambiente">Meio ambiente</a></li>
+            </ul>
+          </li>
+          <li class="item-dropdown">
+            <a href="voluntario.html">Participe</a>
+            <ul class="submenu">
+              <li><a href="voluntario.html">Seja voluntário</a></li>
+              <li><a href="doacao.html">Faça uma doação</a></li>
+            </ul>
+          </li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="cabecalho-pagina">
+      <div class="container">
+        <h1>Guia de estilos</h1>
+        <p>Página com o design system e os componentes feitos em CSS.</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+
+        <div class="bloco-guia">
+          <h2>Cores</h2>
+          <div class="amostras"><div class="amostra"><div class="amostra-cor" style="background-color: var(--azul);"></div><p>azul</p></div><div class="amostra"><div class="amostra-cor" style="background-color: var(--azul-escuro);"></div><p>azul-escuro</p></div><div class="amostra"><div class="amostra-cor" style="background-color: var(--azul-claro);"></div><p>azul-claro</p></div><div class="amostra"><div class="amostra-cor" style="background-color: var(--verde);"></div><p>verde</p></div><div class="amostra"><div class="amostra-cor" style="background-color: var(--verde-escuro);"></div><p>verde-escuro</p></div><div class="amostra"><div class="amostra-cor" style="background-color: var(--verde-claro);"></div><p>verde-claro</p></div><div class="amostra"><div class="amostra-cor" style="background-color: var(--laranja);"></div><p>laranja</p></div><div class="amostra"><div class="amostra-cor" style="background-color: var(--laranja-escuro);"></div><p>laranja-escuro</p></div><div class="amostra"><div class="amostra-cor" style="background-color: var(--branco);"></div><p>branco</p></div><div class="amostra"><div class="amostra-cor" style="background-color: var(--cinza-100);"></div><p>cinza-100</p></div><div class="amostra"><div class="amostra-cor" style="background-color: var(--cinza-300);"></div><p>cinza-300</p></div><div class="amostra"><div class="amostra-cor" style="background-color: var(--cinza-600);"></div><p>cinza-600</p></div><div class="amostra"><div class="amostra-cor" style="background-color: var(--cinza-900);"></div><p>cinza-900</p></div><div class="amostra"><div class="amostra-cor" style="background-color: var(--vermelho);"></div><p>vermelho</p></div><div class="amostra"><div class="amostra-cor" style="background-color: var(--amarelo);"></div><p>amarelo</p></div></div>
+        </div>
+
+        <div class="bloco-guia">
+          <h2>Tipografia</h2>
+          <h1>Título h1 (40px)</h1>
+          <h2>Título h2 (32px)</h2>
+          <h3>Título h3 (20px)</h3>
+          <h4>Título h4 (16px)</h4>
+          <p class="texto-destaque">Texto em destaque (20px)</p>
+          <p>Texto normal (16px)</p>
+          <p class="texto-pequeno">Texto pequeno (14px)</p>
+          <p class="texto-minusculo">Texto mínimo (12px)</p>
+        </div>
+
+        <div class="bloco-guia">
+          <h2>Espaçamentos</h2>
+          <div class="amostra-espaco" style="width: var(--espaco-1);"></div><p class="texto-pequeno">--espaco-1 = 8px</p><div class="amostra-espaco" style="width: var(--espaco-2);"></div><p class="texto-pequeno">--espaco-2 = 16px</p><div class="amostra-espaco" style="width: var(--espaco-3);"></div><p class="texto-pequeno">--espaco-3 = 24px</p><div class="amostra-espaco" style="width: var(--espaco-4);"></div><p class="texto-pequeno">--espaco-4 = 32px</p><div class="amostra-espaco" style="width: var(--espaco-6);"></div><p class="texto-pequeno">--espaco-6 = 48px</p><div class="amostra-espaco" style="width: var(--espaco-8);"></div><p class="texto-pequeno">--espaco-8 = 64px</p>
+        </div>
+
+        <div class="bloco-guia">
+          <h2>Grid de 12 colunas</h2>
+          <div class="linha demo-grid" style="margin-bottom: 8px;"><div class="coluna col-1">col-1</div><div class="coluna col-1">col-1</div><div class="coluna col-1">col-1</div><div class="coluna col-1">col-1</div><div class="coluna col-1">col-1</div><div class="coluna col-1">col-1</div><div class="coluna col-1">col-1</div><div class="coluna col-1">col-1</div><div class="coluna col-1">col-1</div><div class="coluna col-1">col-1</div><div class="coluna col-1">col-1</div><div class="coluna col-1">col-1</div></div><div class="linha demo-grid" style="margin-bottom: 8px;"><div class="coluna col-6">col-6</div><div class="coluna col-6">col-6</div></div><div class="linha demo-grid" style="margin-bottom: 8px;"><div class="coluna col-4">col-4</div><div class="coluna col-4">col-4</div><div class="coluna col-4">col-4</div></div><div class="linha demo-grid" style="margin-bottom: 8px;"><div class="coluna col-3">col-3</div><div class="coluna col-3">col-3</div><div class="coluna col-3">col-3</div><div class="coluna col-3">col-3</div></div><div class="linha demo-grid" style="margin-bottom: 8px;"><div class="coluna col-8">col-8</div><div class="coluna col-4">col-4</div></div>
+        </div>
+
+        <div class="bloco-guia">
+          <h2>Botões</h2>
+          <div class="grupo-botoes">
+            <button class="botao">Padrão</button>
+            <button class="botao botao-verde">Verde</button>
+            <button class="botao botao-laranja">Laranja</button>
+            <button class="botao botao-contorno">Contorno</button>
+            <button class="botao" disabled>Desabilitado</button>
+          </div>
+          <p></p>
+          <div class="grupo-botoes">
+            <button class="botao botao-pequeno">Pequeno</button>
+            <button class="botao botao-grande">Grande</button>
+          </div>
+        </div>
+
+        <div class="bloco-guia">
+          <h2>Badges e tags</h2>
+          <div class="badges-card">
+            <span class="badge">Padrão</span>
+            <span class="badge badge-azul">Educação</span>
+            <span class="badge badge-verde">Meio ambiente</span>
+            <span class="badge badge-laranja">Urgente</span>
+            <span class="badge badge-amarelo">Aceitando doações</span>
+            <span class="badge badge-vermelho">Encerrado</span>
+          </div>
+          <p></p>
+          <div class="tags">
+            <a class="tag ativa" href="#">Todos</a>
+            <a class="tag" href="#">Educação</a>
+            <a class="tag" href="#">Saúde</a>
+            <a class="tag" href="#">Meio ambiente</a>
+          </div>
+        </div>
+
+        <div class="bloco-guia">
+          <h2>Alertas</h2>
+          <div class="alerta alerta-sucesso"><p>Sucesso: cadastro enviado.</p></div>
+          <div class="alerta alerta-erro"><p>Erro: não foi possível enviar.</p></div>
+          <div class="alerta alerta-aviso"><p>Aviso: confira os dados antes de enviar.</p></div>
+          <div class="alerta alerta-info"><p>Informação: os campos com * são obrigatórios.</p></div>
+        </div>
+
+        <div class="bloco-guia">
+          <h2>Toast e modal</h2>
+          <div class="grupo-botoes">
+            <button class="botao botao-verde" data-mostrar-toast="toast-teste">Mostrar toast</button>
+            <button class="botao botao-contorno" data-modal="modal-teste">Abrir modal</button>
+          </div>
+        </div>
+
+        <div class="bloco-guia">
+          <h2>Formulário com validação visual</h2>
+          <div class="linha">
+            <div class="col-4">
+              <div class="campo">
+                <label for="g1">Normal</label>
+                <input type="text" id="g1" placeholder="Digite aqui">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="campo">
+                <label for="g2">Válido</label>
+                <input type="text" id="g2" class="ok" value="Maria da Silva">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="campo">
+                <label for="g3">Com erro</label>
+                <input type="email" id="g3" class="erro" value="maria@">
+                <span class="mensagem-erro visivel">Digite um e-mail válido.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <div class="toast" id="toast-teste">
+      <strong>Toast de exemplo</strong>
+      <p class="texto-pequeno" style="margin: 0;">Ele some sozinho em alguns segundos.</p>
+    </div>
+
+    <div class="modal" id="modal-teste">
+      <div class="modal-caixa">
+        <button class="modal-fechar">&times;</button>
+        <h2>Modal de exemplo</h2>
+        <p>Janela que aparece por cima da página.</p>
+        <button class="botao modal-ok">Fechar</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-colunas">
+      <div>
+        <h3>Elo Solidário</h3>
+        <p class="texto-pequeno">Organização fictícia criada para o projeto da disciplina. Conectamos voluntários, doadores e projetos sociais.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <ul class="texto-pequeno">
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="voluntario.html">Seja voluntário</a></li>
+          <li><a href="doacao.html">Faça uma doação</a></li>
+          <li><a href="componentes.html">Guia de estilos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul class="texto-pequeno">
+          <li>contato@elosolidario.org.br</li>
+          <li>(11) 0000-0000</li>
+          <li>Rua Exemplo, 123 - São Paulo, SP</li>
+        </ul>
+      </div>
+    </div>
+    <p class="rodape-copia">© 2026 Elo Solidário. Trabalho acadêmico, Entrega II (CSS3).</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

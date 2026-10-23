@@ -1,0 +1,62 @@
+/* design system: todas as cores, fontes e espacos ficam aqui */
+/* breakpoints que eu usei (variavel nao funciona em media query, entao deixei anotado):
+   480px  celular grande
+   640px  celular deitado / tablet pequeno
+   768px  tablet
+   1024px notebook
+   1280px monitor grande */
+
+:root {
+  /* cores primarias */
+  --azul: #1f5fa8;
+  --azul-escuro: #14406f;
+  --azul-claro: #dcebfa;
+
+  /* cores secundarias */
+  --verde: #277a4d;
+  --verde-escuro: #1b5836;
+  --verde-claro: #def3e6;
+  --laranja: #f28c28;
+  --laranja-escuro: #b85c00;
+
+  /* neutras */
+  --branco: #ffffff;
+  --cinza-100: #f4f6f8;
+  --cinza-300: #d5dae0;
+  --cinza-600: #5c6670;
+  --cinza-900: #222a33;
+
+  /* cores de feedback */
+  --vermelho: #c9302c;
+  --vermelho-claro: #fbe3e2;
+  --amarelo: #f5c542;
+  --amarelo-claro: #fdf3d0;
+
+  /* fontes */
+  --fonte-titulo: "Poppins", Arial, sans-serif;
+  --fonte-texto: "Open Sans", Arial, sans-serif;
+
+  /* tamanhos de fonte */
+  --fonte-xs: 0.75rem;   /* 12px */
+  --fonte-sm: 0.875rem;  /* 14px */
+  --fonte-base: 1rem;    /* 16px */
+  --fonte-md: 1.25rem;   /* 20px */
+  --fonte-lg: 1.5rem;    /* 24px */
+  --fonte-xl: 2rem;      /* 32px */
+  --fonte-xxl: 2.5rem;   /* 40px */
+
+  /* espacamentos */
+  --espaco-1: 8px;
+  --espaco-2: 16px;
+  --espaco-3: 24px;
+  --espaco-4: 32px;
+  --espaco-6: 48px;
+  --espaco-8: 64px;
+
+  /* outras coisas */
+  --raio: 8px;
+  --raio-redondo: 999px;
+  --sombra: 0 2px 6px rgba(0, 0, 0, 0.15);
+  --sombra-forte: 0 6px 16px rgba(0, 0, 0, 0.2);
+  --largura-max: 1200px;
+}

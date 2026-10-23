@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elo Solidário: ONG que conecta voluntários, doadores e projetos sociais.">
+  <title>Faça uma doação | Elo Solidário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-interno">
+      <a class="logo" href="../index.html">
+        <img src="../img/logo.svg" alt="" width="40" height="40">
+        Elo Solidário
+      </a>
+
+      <input type="checkbox" id="menu-check" class="menu-check">
+      <label for="menu-check" class="botao-hamburguer" aria-label="Abrir ou fechar o menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="menu">
+        <ul class="menu-lista">
+          <li><a href="../index.html">Início</a></li>
+          <li class="item-dropdown">
+            <a href="projetos.html">Projetos</a>
+            <ul class="submenu">
+              <li><a href="projetos.html#educacao">Educação</a></li>
+              <li><a href="projetos.html#saude">Saúde</a></li>
+              <li><a href="projetos.html#ambiente">Meio ambiente</a></li>
+            </ul>
+          </li>
+          <li class="item-dropdown">
+            <a class="ativo" href="voluntario.html">Participe</a>
+            <ul class="submenu">
+              <li><a href="voluntario.html">Seja voluntário</a></li>
+              <li><a href="doacao.html">Faça uma doação</a></li>
+            </ul>
+          </li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="cabecalho-pagina">
+      <div class="container">
+        <h1>Faça uma doação</h1>
+        <p>Qualquer valor ajuda. Escolha quanto quer doar e como prefere pagar.</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container pagina-lateral">
+        <form class="formulario" data-toast="toast-doacao">
+          <div class="alerta alerta-aviso">
+            <p>Esta página é só um exemplo visual. Nenhum pagamento é feito de verdade.</p>
+          </div>
+
+          <fieldset class="campo">
+            <legend>Valor da doação</legend>
+            <div class="valores">
+              <input type="radio" name="valor" id="v20" value="20"><label for="v20">R$ 20</label>
+              <input type="radio" name="valor" id="v50" value="50" checked><label for="v50">R$ 50</label>
+              <input type="radio" name="valor" id="v100" value="100"><label for="v100">R$ 100</label>
+              <input type="radio" name="valor" id="v200" value="200"><label for="v200">R$ 200</label>
+            </div>
+          </fieldset>
+
+          <div class="campo">
+            <label for="outro">Ou digite outro valor (R$)</label>
+            <input type="number" id="outro" name="outro" placeholder="Ex.: 35" min="5">
+            <span class="mensagem-erro">O valor mínimo é R$ 5.</span>
+          </div>
+
+          <div class="linha-campos">
+            <div class="campo">
+              <label for="nome-doador">Nome *</label>
+              <input type="text" id="nome-doador" name="nome" placeholder="Seu nome" required minlength="3">
+              <span class="mensagem-erro">Digite seu nome (mínimo 3 letras).</span>
+            </div>
+            <div class="campo">
+              <label for="email-doador">E-mail *</label>
+              <input type="email" id="email-doador" name="email" placeholder="voce@email.com" required>
+              <span class="mensagem-erro">Digite um e-mail válido.</span>
+            </div>
+          </div>
+
+          <fieldset class="campo">
+            <legend>Forma de pagamento</legend>
+            <div class="opcoes">
+              <label><input type="radio" name="pagamento" value="pix" checked> Pix</label>
+              <label><input type="radio" name="pagamento" value="cartao"> Cartão</label>
+              <label><input type="radio" name="pagamento" value="boleto"> Boleto</label>
+            </div>
+          </fieldset>
+
+          <div class="grupo-botoes">
+            <button type="submit" class="botao botao-laranja botao-grande">Doar agora</button>
+            <button type="button" class="botao botao-grande" disabled>Doação mensal (em breve)</button>
+          </div>
+        </form>
+
+        <aside>
+          <div class="painel painel-fixo">
+            <h2>Seu dinheiro vai para</h2>
+            <ul>
+              <li>R$ 20: material escolar para 1 criança</li>
+              <li>R$ 50: uma cesta de alimentos</li>
+              <li>R$ 100: um mês de aulas de reforço</li>
+            </ul>
+            <p class="texto-pequeno texto-cinza">Valores de exemplo.</p>
+            <a class="botao botao-contorno botao-pequeno" href="#" data-modal="modal-uso">Como usamos as doações</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="toast" id="toast-doacao">
+      <strong>Obrigado pela doação!</strong>
+      <p class="texto-pequeno" style="margin: 0;">Enviamos os detalhes para o seu e-mail.</p>
+    </div>
+
+    <div class="modal" id="modal-uso">
+      <div class="modal-caixa">
+        <button class="modal-fechar">&times;</button>
+        <h2>Como usamos as doações</h2>
+        <p>Todo o dinheiro vai para os projetos que você vê na página de projetos. Publicamos a prestação de contas todo semestre.</p>
+        <button class="botao modal-ok">Fechar</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-colunas">
+      <div>
+        <h3>Elo Solidário</h3>
+        <p class="texto-pequeno">Organização fictícia criada para o projeto da disciplina. Conectamos voluntários, doadores e projetos sociais.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <ul class="texto-pequeno">
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="voluntario.html">Seja voluntário</a></li>
+          <li><a href="doacao.html">Faça uma doação</a></li>
+          <li><a href="componentes.html">Guia de estilos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul class="texto-pequeno">
+          <li>contato@elosolidario.org.br</li>
+          <li>(11) 0000-0000</li>
+          <li>Rua Exemplo, 123 - São Paulo, SP</li>
+        </ul>
+      </div>
+    </div>
+    <p class="rodape-copia">© 2026 Elo Solidário. Trabalho acadêmico, Entrega II (CSS3).</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

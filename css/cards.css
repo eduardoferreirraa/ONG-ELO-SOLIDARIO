@@ -1,0 +1,130 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espaco-3);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--branco);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-forte);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-corpo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+  flex: 1;
+  padding: var(--espaco-3);
+}
+
+.card-corpo h3,
+.card-corpo p {
+  margin-bottom: 0;
+}
+
+.card-rodape {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+}
+
+/* barra de arrecadacao */
+.barra {
+  height: 10px;
+  background-color: var(--cinza-300);
+  border-radius: var(--raio-redondo);
+  overflow: hidden;
+}
+
+.barra-preenchida {
+  height: 100%;
+  background-color: var(--verde);
+}
+
+.meta-texto {
+  font-size: var(--fonte-sm);
+  color: var(--cinza-600);
+  margin-bottom: 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px var(--espaco-2);
+  border-radius: var(--raio-redondo);
+  font-size: var(--fonte-xs);
+  font-weight: 600;
+  background-color: var(--cinza-300);
+  color: var(--cinza-900);
+}
+
+.badge-azul {
+  background-color: var(--azul-claro);
+  color: var(--azul-escuro);
+}
+
+.badge-verde {
+  background-color: var(--verde-claro);
+  color: var(--verde-escuro);
+}
+
+.badge-laranja {
+  background-color: var(--laranja);
+  color: var(--cinza-900);
+}
+
+.badge-vermelho {
+  background-color: var(--vermelho-claro);
+  color: var(--vermelho);
+}
+
+.badge-amarelo {
+  background-color: var(--amarelo-claro);
+  color: var(--cinza-900);
+}
+
+/* tags (com borda, usadas pra filtrar) */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-1);
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px var(--espaco-2);
+  border: 2px solid var(--azul);
+  border-radius: var(--raio);
+  font-size: var(--fonte-sm);
+  color: var(--azul);
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.tag:hover,
+.tag.ativa {
+  background-color: var(--azul);
+  color: var(--branco);
+}
+
+.badges-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-1);
+}

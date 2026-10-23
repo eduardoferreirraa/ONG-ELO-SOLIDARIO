@@ -1,0 +1,84 @@
+/* tirando os estilos padrao do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  font-size: var(--fonte-base);
+  line-height: 1.6;
+  color: var(--cinza-900);
+  background-color: var(--branco);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fonte-titulo);
+  color: var(--azul-escuro);
+  line-height: 1.25;
+  margin-bottom: var(--espaco-2);
+}
+
+h1 { font-size: var(--fonte-xl); }
+h2 { font-size: var(--fonte-lg); }
+h3 { font-size: var(--fonte-md); }
+h4 { font-size: var(--fonte-base); }
+
+p {
+  margin-bottom: var(--espaco-2);
+}
+
+a {
+  color: var(--azul);
+}
+
+a:hover {
+  color: var(--azul-escuro);
+}
+
+/* foco visivel para quem usa teclado */
+:focus {
+  outline: 3px solid var(--laranja);
+  outline-offset: 2px;
+}
+
+.texto-destaque {
+  font-size: var(--fonte-md);
+}
+
+.texto-pequeno {
+  font-size: var(--fonte-sm);
+}
+
+.texto-minusculo {
+  font-size: var(--fonte-xs);
+}
+
+.texto-centro {
+  text-align: center;
+}
+
+.texto-cinza {
+  color: var(--cinza-600);
+}
